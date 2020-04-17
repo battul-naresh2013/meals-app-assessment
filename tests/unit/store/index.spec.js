@@ -1,4 +1,4 @@
-import store from '../../../src/store';
+import store from '@/store';
 
 describe('In Store', () => {
   it('it should have all state objects ', () => {

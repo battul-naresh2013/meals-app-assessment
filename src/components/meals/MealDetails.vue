@@ -14,10 +14,10 @@
 </template>
 <script>
 import mixin from '@/mixins/mixin';
-import meal from './Meal.vue';
-import ingredient from './Ingredient.vue';
-import measurement from './Measurement.vue';
-import instrucions from './Instructions.vue';
+import meal from '@/components/meals/Meal.vue';
+import ingredient from '@/components/meals/Ingredient.vue';
+import measurement from '@/components/meals/Measurement.vue';
+import instrucions from '@/components/meals/Instructions.vue';
 
 export default {
   name: 'MealDetails',

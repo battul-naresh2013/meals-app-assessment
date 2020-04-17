@@ -2,8 +2,8 @@ import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import VueRouter from 'vue-router';
-import { routes } from '../../../../src/router/index';
-import searchMeal from '../../../../src/components/meals/SearchMeal.vue';
+import { routes } from '@/router/index';
+import searchMeal from '@/components/meals/SearchMeal.vue';
 
 describe('In SearchMeal Component', () => {
   let searchMealWrapper;

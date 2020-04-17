@@ -1,8 +1,8 @@
 // meals store actions
 export const mealsActions = {
-  getAllMealsBySearchKeyAction: 'mealsModule/getAllMealsBySearchKeyAction',
-  getRandomMealAction: 'mealsModule/getRandomMealAction',
-  getMealByMealNameAction: 'mealsModule/getMealByMealNameAction',
+  getAllMealsBySearchKey: 'mealsModule/getAllMealsBySearchKey',
+  getSingleRandomMeal: 'mealsModule/getSingleRandomMeal',
+  getMealByMealName: 'mealsModule/getMealByMealName',
 };
 
 // notifications store actions

@@ -1,9 +1,9 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueRouter from 'vue-router';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
-import appHeader from '../../../../src/components/header/Header.vue';
-import { routes } from '../../../../src/router/index';
-import searchMeal from '../../../../src/components/meals/SearchMeal.vue';
+import appHeader from '@/components/header/Header.vue';
+import { routes } from '@/router/index';
+import searchMeal from '@/components/meals/SearchMeal.vue';
 
 describe('In Header Component', () => {
   let appHeaderWrapper;

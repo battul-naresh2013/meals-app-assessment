@@ -1,9 +1,9 @@
-import { getRandomMeal, getMealByName, getAllMealsBySearchKey } from '@/services/meals-service';
-import { notificationActions } from './action-types.const';
-import handleErrors from '../handle-errors';
+import { getRandomMeal, getMealByName, getAllMealsByFirstLetter } from '@/services/meals-service';
+import { notificationActions } from '@/store/modules/mealsModule/action-types.const';
+import handleErrors from '@/store/modules/handle-errors';
 
 const actions = {
-  async getMealByMealNameAction({ commit, dispatch }, mealName) {
+  async getMealByMealName({ commit, dispatch }, mealName) {
     return getMealByName(mealName)
       .then((meal) => meal && meal.meals && commit('SET_MEAL', meal.meals))
       .catch((error) => {
@@ -15,8 +15,8 @@ const actions = {
       });
   },
 
-  async getAllMealsBySearchKeyAction({ commit, dispatch }, searchKey) {
-    return getAllMealsBySearchKey(searchKey)
+  async getAllMealsBySearchKey({ commit, dispatch }, searchKey) {
+    return getAllMealsByFirstLetter(searchKey)
       .then((meals) => commit('SET_MEALS', meals.meals))
       .catch((error) => {
         const notification = {
@@ -27,7 +27,7 @@ const actions = {
       });
   },
 
-  async getRandomMealAction({ commit, dispatch }) {
+  async getSingleRandomMeal({ commit, dispatch }) {
     return getRandomMeal()
       .then((meal) => meal && meal.meals && commit('SET_MEAL', meal.meals))
       .catch((error) => {

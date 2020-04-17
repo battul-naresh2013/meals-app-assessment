@@ -2,10 +2,10 @@ import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueRouter from 'vue-router';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
-import { routes } from '../../../src/router/index';
-import dashboard from '../../../src/views/Dashboard.vue';
-import spinner from '../../../src/components/spinner/Spinner.vue';
-import mealDetails from '../../../src/components/meals/MealDetails.vue';
+import { routes } from '@/router/index';
+import dashboard from '@/views/Dashboard.vue';
+import spinner from '@/components/spinner/Spinner.vue';
+import mealDetails from '@/components/meals/MealDetails.vue';
 
 describe('In Dashboard Component', () => {
   let wrapper;

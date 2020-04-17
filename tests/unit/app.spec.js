@@ -1,8 +1,8 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueRouter from 'vue-router';
-import app from '../../src/App.vue';
-import appHeader from '../../src/components/header/Header.vue';
-import appFooter from '../../src/components/footer/Footer.vue';
+import app from '@/App.vue';
+import appHeader from '@/components/header/Header.vue';
+import appFooter from '@/components/footer/Footer.vue';
 
 describe('In App Component', () => {
   let appWrapper;

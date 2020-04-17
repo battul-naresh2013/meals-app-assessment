@@ -6,7 +6,7 @@
       v-model="mealName"
       debounce="200"
       list="meals"
-      placeholder="Find a meal.."
+      placeholder="Find a meal.. (type slowly)"
       id="search"
     ></b-form-input>
     <datalist id="meals">
@@ -42,11 +42,11 @@ export default {
   methods: {
     // this function is uesed to get meal by passing full meal name
     searchMeal() {
-      this.$store.dispatch(mealsActions.getMealByMealNameAction, this.mealName);
+      this.$store.dispatch(mealsActions.getMealByMealName, this.mealName);
     },
     // this function is uesed to get meal by passing letters from the meal name.
     searchMealBySearchKey() {
-      this.$store.dispatch(mealsActions.getAllMealsBySearchKeyAction, this.mealName);
+      this.$store.dispatch(mealsActions.getAllMealsBySearchKey, this.mealName);
     },
   },
 };

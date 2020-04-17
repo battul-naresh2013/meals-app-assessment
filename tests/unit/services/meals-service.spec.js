@@ -1,15 +1,15 @@
 // Import intercepted by Jest to return mock getMealByName function
-import { getRandomMeal, getMealByName, getAllMealsBySearchKey } from '../../../src/services/meals-service';
-import clientApi from '../../../src/services/client-api';
+import { getRandomMeal, getMealByName, getAllMealsByFirstLetter } from '@/services/meals-service';
+import clientApi from '@/services/client-api';
 
 // Mock module with Jest mock functions
-jest.mock('../../../src/services/client-api');
+jest.mock('@/services/client-api');
 
 describe('In Meals service, ', () => {
   it('getAllMealsBySearchKey api should call', () => {
     const meals = { meals: [{ meal: 1 }, { meal: 2 }, { meal: 3 }] };
     clientApi.get.mockResolvedValue(meals.meals);
-    getAllMealsBySearchKey().then(((result) => {
+    getAllMealsByFirstLetter().then(((result) => {
       expect(result).toEqual(meals.meals);
     }));
   });

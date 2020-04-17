@@ -2,8 +2,8 @@ import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import VueRouter from 'vue-router';
-import { routes } from '../../../../src/router/index';
-import instructions from '../../../../src/components/meals/Instructions.vue';
+import { routes } from '@/router/index';
+import instructions from '@/components/meals/Instructions.vue';
 
 describe('In Instructions Component', () => {
   let instructionsWrapper;

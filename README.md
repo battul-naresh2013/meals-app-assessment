@@ -72,8 +72,8 @@ npm run lint
 3) Vuex Standards:
    a. mutations: ALL_CAPS
       ex: SET_MEALS
-   b. actions: camelCaseSuffixAction
-      ex: getMealByMealNameAction
+   b. actions: camelCase
+      ex: getMealByMealName
    c. state: camelCase
       ex: meals  
 

@@ -2,8 +2,8 @@ import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import VueRouter from 'vue-router';
-import { routes } from '../../../../src/router/index';
-import measurement from '../../../../src/components/meals/Measurement.vue';
+import { routes } from '@/router/index';
+import measurement from '@/components/meals/Measurement.vue';
 
 describe('In Measurement Component', () => {
   let measurementWrapper;

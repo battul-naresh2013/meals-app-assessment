@@ -1,10 +1,10 @@
 import Vuex from 'vuex';
 import { createLocalVue } from '@vue/test-utils';
-import * as mealsModule from '../../../../../src/store/modules/mealsModule';
-import { getMealByName } from '../../../../../src/services/meals-service';
+import * as mealsModule from '@/store/modules/mealsModule';
+import { getMealByName } from '@/services/meals-service';
 
 // Mock module with Jest mock functions
-jest.mock('../../../../../src/services/meals-service');
+jest.mock('@/services/meals-service');
 
 // create local vue instance
 const localVue = createLocalVue();
@@ -22,7 +22,7 @@ describe('In store', () => {
       state: {},
     });
 
-    await store.dispatch('mealsModule/getMealByMealNameAction');
+    await store.dispatch('mealsModule/getMealByMealName');
     expect(store.state.mealsModule.meal).toEqual(items.meals);
   });
 });

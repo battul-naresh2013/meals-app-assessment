@@ -1,5 +1,5 @@
-import handleErrors from '../../../../src/store/modules/handle-errors';
-import { notificationActions } from '../../../../src/store/modules/mealsModule';
+import handleErrors from '@/store/modules/handle-errors';
+import { notificationActions } from '@/store/modules/mealsModule';
 
 describe('In handleErrors function', () => {
   let notification;
@@ -7,7 +7,7 @@ describe('In handleErrors function', () => {
   beforeEach(() => {
     notification = {
       type: 'error',
-      message: 'There was a problem getting all employees',
+      message: 'There was a problem getting all meals',
     };
     dispatch = jest.fn();
     handleErrors(notificationActions.addNotification, notification, dispatch);

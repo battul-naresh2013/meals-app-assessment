@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     getRandomMeal() {
-      this.$store.dispatch(mealsActions.getRandomMealAction);
+      this.$store.dispatch(mealsActions.getSingleRandomMeal);
     },
   },
 };

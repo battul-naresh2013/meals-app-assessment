@@ -1,4 +1,4 @@
-import formattedDate from '../../../src/filters/date-filter';
+import formattedDate from '@/filters/date-filter';
 
 describe('In date filter', () => {
   it("returns the date in full year format 'yyyy'", () => {

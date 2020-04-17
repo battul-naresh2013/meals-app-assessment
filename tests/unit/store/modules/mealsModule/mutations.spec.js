@@ -1,4 +1,4 @@
-import mutations from '../../../../../src/store/modules/mealsModule/mutations';
+import mutations from '@/store/modules/mealsModule/mutations';
 
 describe('In mutations', () => {
   it('SET_MEALS sets state.meals to meals', () => {

@@ -2,8 +2,8 @@ import Vuex from 'vuex';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import VueRouter from 'vue-router';
-import { routes } from '../../../../src/router/index';
-import ingredient from '../../../../src/components/meals/Ingredient.vue';
+import { routes } from '@/router/index';
+import ingredient from '@/components/meals/Ingredient.vue';
 
 describe('In Ingredient Component', () => {
   let ingredientWrapper;

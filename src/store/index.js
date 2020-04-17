@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-import * as mealsModule from './modules/mealsModule/index';
+import * as mealsModule from '@/store/modules/mealsModule/index';
 
 Vue.use(Vuex);
 

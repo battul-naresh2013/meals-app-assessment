@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import searchMeal from '../meals/SearchMeal.vue';
+import searchMeal from '@/components/meals/SearchMeal.vue';
 
 export default {
   name: 'Header',
